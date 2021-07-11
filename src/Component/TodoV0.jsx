@@ -113,50 +113,50 @@ export default class Todo extends Component{
     render(){
         return(<div style={{maxWidth:1200,margin:'0 auto',borderRadius:'12px'}}>
     <br/>
-<div class="container">
-  <div class="row">
-    <div class="col"  >
-        <div class="input-group mb-3">
-           <span class="css-input" id="basic-addon1"><b>Topic</b><i style={{color:'red',fontSize:'20px'}}>*</i></span>
-            <input type="text" class="css-input"  aria-label="Username" aria-describedby="basic-addon1" style={{maxWidth:200}}
+<div className="container">
+  <div className="row">
+    <div className="col"  >
+        <div className="input-group mb-3">
+           <span className="css-input" id="basic-addon1"><b>Topic</b><i style={{color:'red',fontSize:'20px'}}>*</i></span>
+            <input type="text" className="css-input"  aria-label="Username" aria-describedby="basic-addon1" style={{maxWidth:200}}
             value={this.state.tempTopic} onChange={this.handleChange} id="topic"/>
         </div>
     </div>
-    <div class="col">
-        <div class="input-group mb-3">
-             <span class="css-input"  id="basic-addon1"><b>Expected Date</b><i style={{color:'red',fontSize:'20px'}}>*</i></span>
-             <input type="date" class="css-input"  aria-label="Username" aria-describedby="basic-addon1" style={{maxWidth:142}}
+    <div className="col">
+        <div className="input-group mb-3">
+             <span className="css-input"  id="basic-addon1"><b>Expected Date</b><i style={{color:'red',fontSize:'20px'}}>*</i></span>
+             <input type="date" className="css-input"  aria-label="Username" aria-describedby="basic-addon1" style={{maxWidth:142}}
               value={this.state.tempDate} onChange={this.handleChange} id="date"/>
         </div>
     </div>
-    <div class="col">
-        <div class="input-group mb-3">
-             <span class="css-input"  id="basic-addon1"><b>Expected Time</b><i style={{color:'red',fontSize:'20px'}}>*</i></span>
-            <input type="time" class="css-input" aria-label="Username" aria-describedby="basic-addon1" style={{maxWidth:150}}
+    <div className="col">
+        <div className="input-group mb-3">
+             <span className="css-input"  id="basic-addon1"><b>Expected Time</b><i style={{color:'red',fontSize:'20px'}}>*</i></span>
+            <input type="time" className="css-input" aria-label="Username" aria-describedby="basic-addon1" style={{maxWidth:150}}
              value={this.state.tempTime} onChange={this.handleChange} id="time"/>
         </div>
     </div>
-    <div class="col">
-         <div class="input-group mb-3" >
-             <label class="css-input" for="inputGroupSelect01"><b>Status</b><i style={{color:'red',fontSize:'20px'}}>*</i></label>
-             <select class="css-input"  id="inputGroupSelect01" style={{maxWidth:150}} onChange={this.handleChange} id="status">
+    <div className="col">
+         <div className="input-group mb-3" >
+             <label className="css-input" for="inputGroupSelect01"><b>Status</b><i style={{color:'red',fontSize:'20px'}}>*</i></label>
+             <select className="css-input"  id="inputGroupSelect01" style={{maxWidth:150}} onChange={this.handleChange} id="status">
                  <option selected value="Open" >Open</option>
                 <option value="In-Progress">In-Progress</option>
                 <option value="Done">Done</option>
             </select>
         </div>
     </div>
-    <div class="row">
-        <div class="col" >
-            <div class="input-group mb-3" >
-                <span  class="css-input"><b>Comments</b></span>
-                <textarea class="form-control" aria-label="With textarea" style={{maxWidth:800}} />
+    <div className="row">
+        <div className="col" >
+            <div className="input-group mb-3" >
+                <span  className="css-input"><b>Comments</b></span>
+                <textarea className="form-control" aria-label="With textarea" style={{maxWidth:800}} />
             </div>
         </div>
         <div className="col-3">
-        <div class="button "  onClick={this.handleSave}>
+        <div className="button "  onClick={this.handleSave}>
             
-  <i class="fa fa-check"></i>{this.state.addTodo}
+  <i className="fa fa-check"></i>{this.state.addTodo}
 </div>
         </div>
     </div>
